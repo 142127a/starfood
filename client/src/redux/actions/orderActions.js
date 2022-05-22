@@ -31,7 +31,8 @@ export const createOrders = (order, navigate, toast) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://yummy-food-delivery.herokuapp.com/api/orders",
+      //https://starfood.herokuapp.com/
+      "https://starfood.herokuapp.com/api/orders",
       order,
       config
     );
@@ -60,7 +61,7 @@ export const getUserOrders = (email) => async (dispatch) => {
   try {
     dispatch({ type: GET_ORDER_REQUEST });
     const { data } = await axios.get(
-      `https://yummy-food-delivery.herokuapp.com/api/orders/${email}`
+      `https://starfood.herokuapp.com/api/orders/${email}`
     );
     dispatch({
       type: GET_ORDER_SUCCESS,
@@ -91,7 +92,7 @@ export const deleteOrder = (id, toast) => async (dispatch) => {
     };
 
     const { data } = await axios.delete(
-      `https://yummy-food-delivery.herokuapp.com/api/orders/${id}`,
+      `https://starfood.herokuapp.com/api/orders/${id}`,
       config
     );
     dispatch({
@@ -118,7 +119,8 @@ export const getAllOrders = () => async (dispatch) => {
   try {
     dispatch({ type: GET_ALL_ORDER_REQUEST });
     const { data } = await axios.get(
-      `https://yummy-food-delivery.herokuapp.com/api/orders`
+      //https://yummy-food-delivery.herokuapp.com
+      `https://starfood.herokuapp.com/api/orders`
     );
     dispatch({
       type: GET_ALL_ORDER_SUCCESS,

@@ -46,6 +46,7 @@ mongoose.connect(
 );
 
 // only for production this code
+//req: request, res: response
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -57,7 +58,7 @@ if (process.env.NODE_ENV === "production") {
 // server running
 const PORT = process.env.PORT || 8000;
 
-//
+//start webserver and listen port 8000 => Web Server in model MVC
 
 app.listen(PORT, () => {
   console.log("Listening on port " + PORT);

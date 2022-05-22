@@ -31,7 +31,9 @@ const ManageAllOrders = () => {
 
       data.status = "Approved";
       const res = await axios.put(
-        `https://yummy-food-delivery.herokuapp.com/api/orders/${id}`,
+        //https://starfood.herokuapp.com/
+        //https://yummy-food-delivery.herokuapp.com/
+        `https://starfood.herokuapp.com/api/orders/${id}`,
         { ...data }
       );
       toast.success(res.data.message);
