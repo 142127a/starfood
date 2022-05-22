@@ -4,9 +4,9 @@ const fs = require("fs");
 
 // we will upload image on cloudinary
 cloudinary.config({
-  cloud_name: dkc78mvbx,
-  api_key: 877123272914856,
-  api_secret: PEdL9l4C0XgBebNx4_mkyesTRfU,
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 // Upload image only admin can use

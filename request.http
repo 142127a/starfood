@@ -1,1 +1,5 @@
-GET https://localhost:8000/api/foods/
+GET https://localhost:5000/
+
+
+
+POST https://localhost:5000/api/products

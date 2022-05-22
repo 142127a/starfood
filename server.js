@@ -56,9 +56,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // server running
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
-//start webserver and listen port 8000 => Web Server in model MVC
+//start webserver and listen port 5000 => Web Server in model MVC
 
 app.listen(PORT, () => {
   console.log("Listening on port " + PORT);
