@@ -25,8 +25,8 @@ export const createProduct = (product, navigate, toast) => async (dispatch) => {
     };
     const { data } = await axios.post(
       //https://starfood.herokuapp.com/
-     "https://yummy-food-delivery.herokuapp.com/api/products",
-     // "https://starfood.herokuapp.com/api/products",
+     //"https://yummy-food-delivery.herokuapp.com/api/products",
+     "https://starfood.herokuapp.com/api/products",
       product,
       config
     );
@@ -55,7 +55,7 @@ export const getAllProduct = () => async (dispatch) => {
     dispatch({ type: ALL_PRODUCTS_LOADING });
     const { data } = await axios.get(
       //https://starfood.herokuapp.com/
-      "https://yummy-food-delivery.herokuapp.com/api/products"
+      "https://starfood.herokuapp.com/api/products"
     );
     dispatch({
       type: ALL_PRODUCTS_SUCCESS,
@@ -80,7 +80,7 @@ export const getProductById = (id) => async (dispatch) => {
     });
 
     const { data } = await axios.get(
-      `https://yummy-food-delivery.herokuapp.com/api/products/${id}`
+      `https://starfood.herokuapp.com/api/products/${id}`
     );
 
     dispatch({
