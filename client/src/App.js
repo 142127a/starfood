@@ -69,8 +69,6 @@ function App() {
           >
             <Route index element={<Welcome />}></Route>
             <Route path="myorders" element={<MyOrders />}></Route>
-            <Route path="manageOrders" element={<ManageAllOrders />}></Route>
-            <Route path="addproduct" element={<AddProduct />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

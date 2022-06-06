@@ -31,7 +31,6 @@ export const createOrders = (order, navigate, toast) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      //https://starfood.herokuapp.com/
       "https://starfood.herokuapp.com/api/orders",
       order,
       config
@@ -119,7 +118,6 @@ export const getAllOrders = () => async (dispatch) => {
   try {
     dispatch({ type: GET_ALL_ORDER_REQUEST });
     const { data } = await axios.get(
-      //https://yummy-food-delivery.herokuapp.com
       `https://starfood.herokuapp.com/api/orders`
     );
     dispatch({
@@ -136,3 +134,4 @@ export const getAllOrders = () => async (dispatch) => {
     });
   }
 };
+

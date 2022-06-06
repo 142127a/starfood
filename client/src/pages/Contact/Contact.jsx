@@ -31,7 +31,7 @@ const Contact = () => (
 
                 <p>
                   <a href="mailto:sahadat.developer@gmail.com">
-                    yummy@gmail.com
+                    abc@gmail.com
                   </a>
                 </p>
               </div>
@@ -42,7 +42,7 @@ const Contact = () => (
               </div>
               <div className="contacts__content__info__wrapper__info-dec">
                 <h6>Address</h6>
-                <p>No: 58 A, East Madison Street</p>
+                <p>HCM, VN</p>
               </div>
             </div>
             <div className="contacts__content__info__wrapper__social">

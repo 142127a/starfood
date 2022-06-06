@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiDashboard2Fill } from "react-icons/ri";
 import { FaAddressCard } from "react-icons/fa";
-import { GiTwirlCenter } from "react-icons/gi";
 import { CgFileAdd } from "react-icons/cg";
 import { VscChromeClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -83,7 +82,7 @@ export default function Sidebar() {
                 <RiDashboard2Fill />
                 <span> My Orders</span>
               </Link>
-            </li>
+            </li>  
           </ul>
         </div>
       </div>

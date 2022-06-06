@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../../redux/actions/userActions";
 import person from "../../assets/images/person.png";
 
-const Header = () => {
+const AdminHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef(null);
   const navigate = useNavigate();
@@ -52,34 +52,6 @@ const Header = () => {
 
         <div className={"nav__menu " + (menuOpen && "show-menu")}>
           <ul className="nav__list nav__menu__list">
-            <li className="nav__item">
-              <Link
-                to="/"
-                className="nav__link"
-                onClick={() => setMenuOpen(false)}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link
-                to="/shop"
-                className="nav__link"
-                onClick={() => setMenuOpen(false)}
-              >
-                Products
-              </Link>
-            </li>
-
-            <li className="nav__item">
-              <Link
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="nav__link"
-              >
-                Contact
-              </Link>
-            </li>
             <NavDropdown
               title={
                 currentUser ? (
@@ -127,16 +99,6 @@ const Header = () => {
                   >
                     Log in
                   </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="nav__dropdown__item"
-                    onClick={() => {
-                      navigate("/register");
-                      setMenuOpen(false);
-                    }}
-                    // onClick={() => navigate("/register")}
-                  >
-                    Register
-                  </NavDropdown.Item>
                 </>
               )}
             </NavDropdown>
@@ -164,4 +126,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AdminHeader;

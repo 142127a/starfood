@@ -6,12 +6,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  /**  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  /*
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGEING_SERDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID, */
+  appId: process.env.REACT_APP_FIREBASE_APP_ID, 
+  */
   apiKey: "AIzaSyAPW5sK9bHCQ_QeDVkRel_cBYwQH0NzaF0",
   authDomain: "starfood-8d03a.firebaseapp.com",
   databaseURL: "https://starfood-8d03a-default-rtdb.asia-southeast1.firebasedatabase.app",
@@ -20,6 +22,7 @@ const firebaseConfig = {
   messagingSenderId: "861455697945",
   appId: "1:861455697945:web:be6e195fc1df824832c288",
   measurementId: "G-ZP4ESMFLLJ"
+  
 };
 
 // Initialize Firebase
@@ -29,3 +32,4 @@ export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 
 export const provierGoogle = new GoogleAuthProvider();
+

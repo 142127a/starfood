@@ -1,4 +1,5 @@
 import Header from "./Header/Header";
+import AdminHeader from "./AdminHeader/AdminHeader";
 import Cuisines from "./Cuisines/Cuisines";
 import SectionTitle from "./SectionTitle/SectionTitle";
 import Banner from "./Banner/Banner";
@@ -11,6 +12,7 @@ import Footer from "./Footer/Footer";
 
 export {
   Header,
+  AdminHeader,
   Cuisines,
   SectionTitle,
   Banner,

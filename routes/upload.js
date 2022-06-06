@@ -11,7 +11,7 @@ cloudinary.config({
 
 // Upload image only admin can use
 
-router.post("/upload", (req, res, next) => {
+router.post("/admin/upload", (req, res, next) => {
   console.log(req.files);
   try {
     if (!req.files || Object.keys(req.files).length === 0) {
@@ -51,7 +51,7 @@ router.post("/upload", (req, res, next) => {
   }
 });
 
-router.post("/destroy", (req, res) => {
+router.post("/admin/destroy", (req, res) => {
   try {
     const { public_id } = req.body;
     if (!public_id)

@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const fileUpload = require("express-fileupload");
 const productRoutes = require("./routes/productRoutes");
 const uploadRoutes = require("./routes/upload");
+
 const orderRoutes = require("./routes/orderRoutes");
 
 const path = require("path");
@@ -28,6 +29,8 @@ app.use("/api", uploadRoutes);
 app.use("/api", productRoutes);
 
 app.use("/api", orderRoutes);
+ 
+
 
 // connected to mongodb
 
