@@ -5,11 +5,9 @@ import { Route, Routes } from "react-router-dom";
 import { Header } from "./components";
 import { auth } from "./firebase";
 import {
-  AddProduct,
   Contact,
   Home,
   Login,
-  ManageAllOrders,
   MyOrders,
   NotFound,
   PlaceOrder,

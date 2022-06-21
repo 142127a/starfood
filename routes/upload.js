@@ -1,17 +1,25 @@
+
 const router = require("express").Router();
 const cloudinary = require("cloudinary");
 const fs = require("fs");
 
 // we will upload image on cloudinary
 cloudinary.config({
-  cloud_name: "dkc78mvbx",
-  api_key: "877123272914856",
-  api_secret: "PEdL9l4C0XgBebNx4_mkyesTRfU",
+  
+  cloud_name: "dmfigmwwf",
+  api_key: "368851146835281",
+  api_secret: "RcJaKvACg5KFojmG6TgFd07iTw8",
+
+/*
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+  */
 });
 
 // Upload image only admin can use
 
-router.post("/admin/upload", (req, res, next) => {
+router.post("/upload", (req, res, next) => {
   console.log(req.files);
   try {
     if (!req.files || Object.keys(req.files).length === 0) {
@@ -51,7 +59,7 @@ router.post("/admin/upload", (req, res, next) => {
   }
 });
 
-router.post("/admin/destroy", (req, res) => {
+router.post("/destroy", (req, res) => {
   try {
     const { public_id } = req.body;
     if (!public_id)
